@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MineViewController.h
 //  Weibo
 //
 //  Created by Suramire on 2020/4/25.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface MineViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

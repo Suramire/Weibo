@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604D729E2455AC6400255D2D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D729D2455AC6400255D2D /* HomeViewController.m */; };
+		604D72A12455B27600255D2D /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D72A02455B27600255D2D /* HomeTableViewCell.m */; };
+		604D72A42455B65700255D2D /* HomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D72A32455B65700255D2D /* HomeItem.m */; };
+		605FBD0F24547C1E00EF7CDA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD0E24547C1E00EF7CDA /* MineViewController.m */; };
+		605FBD1224547D3500EF7CDA /* Oauth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD1124547D3500EF7CDA /* Oauth2ViewController.m */; };
+		605FBD1524548D0B00EF7CDA /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD1424548D0B00EF7CDA /* NetWork.m */; };
 		60EDDDBE245478CF00EF1565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDBD245478CF00EF1565 /* AppDelegate.m */; };
 		60EDDDC1245478CF00EF1565 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDC0245478CF00EF1565 /* SceneDelegate.m */; };
-		60EDDDC4245478CF00EF1565 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDC3245478CF00EF1565 /* FirstViewController.m */; };
-		60EDDDC7245478CF00EF1565 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDC6245478CF00EF1565 /* SecondViewController.m */; };
 		60EDDDCA245478CF00EF1565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EDDDC8245478CF00EF1565 /* Main.storyboard */; };
 		60EDDDCC245478D000EF1565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EDDDCB245478D000EF1565 /* Assets.xcassets */; };
 		60EDDDCF245478D000EF1565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EDDDCD245478D000EF1565 /* LaunchScreen.storyboard */; };
@@ -18,15 +22,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		604D729C2455AC6400255D2D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		604D729D2455AC6400255D2D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		604D729F2455B27600255D2D /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		604D72A02455B27600255D2D /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		604D72A22455B65700255D2D /* HomeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItem.h; sourceTree = "<group>"; };
+		604D72A32455B65700255D2D /* HomeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItem.m; sourceTree = "<group>"; };
+		605FBD0D24547C1E00EF7CDA /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		605FBD0E24547C1E00EF7CDA /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		605FBD1024547D3500EF7CDA /* Oauth2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oauth2ViewController.h; sourceTree = "<group>"; };
+		605FBD1124547D3500EF7CDA /* Oauth2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oauth2ViewController.m; sourceTree = "<group>"; };
+		605FBD1324548D0B00EF7CDA /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		605FBD1424548D0B00EF7CDA /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 		60EDDDB9245478CF00EF1565 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EDDDBC245478CF00EF1565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60EDDDBD245478CF00EF1565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60EDDDBF245478CF00EF1565 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		60EDDDC0245478CF00EF1565 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		60EDDDC2245478CF00EF1565 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		60EDDDC3245478CF00EF1565 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		60EDDDC5245478CF00EF1565 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		60EDDDC6245478CF00EF1565 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		60EDDDC9245478CF00EF1565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60EDDDCB245478D000EF1565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EDDDCE245478D000EF1565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +57,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		605FBD0824547BAB00EF7CDA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				605FBD1324548D0B00EF7CDA /* NetWork.h */,
+				605FBD1424548D0B00EF7CDA /* NetWork.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		605FBD0924547BB700EF7CDA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				604D729F2455B27600255D2D /* HomeTableViewCell.h */,
+				604D72A02455B27600255D2D /* HomeTableViewCell.m */,
+				604D72A22455B65700255D2D /* HomeItem.h */,
+				604D72A32455B65700255D2D /* HomeItem.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		60EDDDB0245478CF00EF1565 = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +96,14 @@
 		60EDDDBB245478CF00EF1565 /* Weibo */ = {
 			isa = PBXGroup;
 			children = (
+				605FBD0924547BB700EF7CDA /* model */,
+				605FBD0824547BAB00EF7CDA /* common */,
 				60EDDDD924547A5D00EF1565 /* controller */,
 				60EDDDD8245479FD00EF1565 /* view */,
 				60EDDDBC245478CF00EF1565 /* AppDelegate.h */,
 				60EDDDBD245478CF00EF1565 /* AppDelegate.m */,
 				60EDDDBF245478CF00EF1565 /* SceneDelegate.h */,
 				60EDDDC0245478CF00EF1565 /* SceneDelegate.m */,
-				60EDDDC2245478CF00EF1565 /* FirstViewController.h */,
-				60EDDDC3245478CF00EF1565 /* FirstViewController.m */,
-				60EDDDC5245478CF00EF1565 /* SecondViewController.h */,
-				60EDDDC6245478CF00EF1565 /* SecondViewController.m */,
 				60EDDDCB245478D000EF1565 /* Assets.xcassets */,
 				60EDDDCD245478D000EF1565 /* LaunchScreen.storyboard */,
 				60EDDDD0245478D000EF1565 /* Info.plist */,
@@ -93,6 +123,12 @@
 		60EDDDD924547A5D00EF1565 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				605FBD0D24547C1E00EF7CDA /* MineViewController.h */,
+				605FBD0E24547C1E00EF7CDA /* MineViewController.m */,
+				605FBD1024547D3500EF7CDA /* Oauth2ViewController.h */,
+				605FBD1124547D3500EF7CDA /* Oauth2ViewController.m */,
+				604D729C2455AC6400255D2D /* HomeViewController.h */,
+				604D729D2455AC6400255D2D /* HomeViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -168,9 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EDDDD2245478D000EF1565 /* main.m in Sources */,
-				60EDDDC7245478CF00EF1565 /* SecondViewController.m in Sources */,
+				605FBD1524548D0B00EF7CDA /* NetWork.m in Sources */,
+				604D72A12455B27600255D2D /* HomeTableViewCell.m in Sources */,
 				60EDDDBE245478CF00EF1565 /* AppDelegate.m in Sources */,
-				60EDDDC4245478CF00EF1565 /* FirstViewController.m in Sources */,
+				605FBD0F24547C1E00EF7CDA /* MineViewController.m in Sources */,
+				605FBD1224547D3500EF7CDA /* Oauth2ViewController.m in Sources */,
+				604D729E2455AC6400255D2D /* HomeViewController.m in Sources */,
+				604D72A42455B65700255D2D /* HomeItem.m in Sources */,
 				60EDDDC1245478CF00EF1565 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T66T8V9Y34;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T66T8V9Y34;
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
