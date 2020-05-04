@@ -19,6 +19,14 @@
     self.text = [dic objectForKey:@"text"];
     self.created_at = [dic objectForKey:@"created_at"];
     self.source = [dic objectForKey:@"source"];
+    self.pic_num = [[dic objectForKey:@"pic_num"] integerValue];
+    NSArray *imgs = [dic objectForKey:@"pic_urls"];
+    NSMutableArray *realImages = [NSMutableArray array];
+    for (int i=0; i<imgs.count; i++) {
+        NSDictionary *img = [imgs objectAtIndex:i];
+        [realImages addObject:[NSString stringWithFormat:@"%@",[img objectForKey:@"thumbnail_pic"] ]];
+    }
+    self.imgArray = realImages;
     return self;
 }
 

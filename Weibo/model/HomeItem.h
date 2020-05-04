@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *source;//来源
 
+@property NSArray *imgArray;//微博配图
+
+@property NSInteger pic_num;//配图数量
+
 -(HomeItem *) dataFromJson:(NSDictionary *)dic;
 
 @end

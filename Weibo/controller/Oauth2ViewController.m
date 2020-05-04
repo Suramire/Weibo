@@ -57,7 +57,10 @@
                 
                 [[NetWork new] get:[NSString stringWithFormat:@"https://api.weibo.com/2/users/show.json?access_token=%@&uid=%@",access_token,uid] withBlock:^(BOOL isOK, NSDictionary * _Nonnull json) {
                     if(isOK){
-                        NSLog(@"resp2 %@",json);
+//                        NSLog(@"resp2 %@",json);
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+                        });
                     }
                 }];
             }

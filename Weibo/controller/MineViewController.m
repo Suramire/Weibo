@@ -22,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setUpData];
+}
+
+- (void)setUpData{
     NSString *access_token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
     NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"uid"];
     if(access_token == nil){
@@ -45,16 +50,39 @@
             }
         }];
         //获取用户微博
-        [[NetWork new] get:[NSString stringWithFormat:@"https://api.weibo.com/2/statuses/user_timeline.json?access_token=%@&trim_user=1",access_token] withBlock:^(BOOL isOK, NSDictionary * _Nonnull json) {
-            if(isOK){
-                NSArray *array = [json objectForKey:@"statuses"];
-                NSLog(@"resp3 %@",[array objectAtIndex:0]);
-                
-            }
-        }];
+//        [[NetWork new] get:[NSString stringWithFormat:@"https://api.weibo.com/2/statuses/user_timeline.json?access_token=%@&trim_user=1",access_token] withBlock:^(BOOL isOK, NSDictionary * _Nonnull json) {
+//            if(isOK){
+//                NSArray *array = [json objectForKey:@"statuses"];
+//                NSLog(@"resp3 %@",[array objectAtIndex:0]);
+//
+//            }
+//        }];
         
     }
+}
+
+-(void)removeAll{
+    NSArray *subviews = [self.view subviews];
+    if (subviews.count > 0) {
+        for (UIView *sub in subviews) {
+            [sub removeFromSuperview];
+        }
+    }
     
+    [self viewWillDisappear:YES];
+    [self viewDidDisappear:YES];
+    [self viewDidLoad];
+    [self viewWillAppear:YES];
+    [self viewDidAppear:YES];
+    [self viewWillLayoutSubviews];
+}
+
+- (IBAction)quitLogin:(id)sender {
+    [self removeAll];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"access_token"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"uid"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    [self setUpData];
 }
 
 /*

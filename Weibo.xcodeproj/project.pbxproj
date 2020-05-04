@@ -10,9 +10,11 @@
 		604D729E2455AC6400255D2D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D729D2455AC6400255D2D /* HomeViewController.m */; };
 		604D72A12455B27600255D2D /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D72A02455B27600255D2D /* HomeTableViewCell.m */; };
 		604D72A42455B65700255D2D /* HomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D72A32455B65700255D2D /* HomeItem.m */; };
+		605B14232457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = 605B14222457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.m */; };
 		605FBD0F24547C1E00EF7CDA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD0E24547C1E00EF7CDA /* MineViewController.m */; };
 		605FBD1224547D3500EF7CDA /* Oauth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD1124547D3500EF7CDA /* Oauth2ViewController.m */; };
 		605FBD1524548D0B00EF7CDA /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FBD1424548D0B00EF7CDA /* NetWork.m */; };
+		6090224C245FC97700DBCE34 /* ImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6090224B245FC97700DBCE34 /* ImgCollectionViewCell.m */; };
 		60EDDDBE245478CF00EF1565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDBD245478CF00EF1565 /* AppDelegate.m */; };
 		60EDDDC1245478CF00EF1565 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EDDDC0245478CF00EF1565 /* SceneDelegate.m */; };
 		60EDDDCA245478CF00EF1565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EDDDC8245478CF00EF1565 /* Main.storyboard */; };
@@ -28,12 +30,16 @@
 		604D72A02455B27600255D2D /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		604D72A22455B65700255D2D /* HomeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItem.h; sourceTree = "<group>"; };
 		604D72A32455B65700255D2D /* HomeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItem.m; sourceTree = "<group>"; };
+		605B14212457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+BSIBDesignable.h"; sourceTree = "<group>"; };
+		605B14222457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+BSIBDesignable.m"; sourceTree = "<group>"; };
 		605FBD0D24547C1E00EF7CDA /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		605FBD0E24547C1E00EF7CDA /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		605FBD1024547D3500EF7CDA /* Oauth2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oauth2ViewController.h; sourceTree = "<group>"; };
 		605FBD1124547D3500EF7CDA /* Oauth2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oauth2ViewController.m; sourceTree = "<group>"; };
 		605FBD1324548D0B00EF7CDA /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
 		605FBD1424548D0B00EF7CDA /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
+		6090224A245FC97700DBCE34 /* ImgCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgCollectionViewCell.h; sourceTree = "<group>"; };
+		6090224B245FC97700DBCE34 /* ImgCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgCollectionViewCell.m; sourceTree = "<group>"; };
 		60EDDDB9245478CF00EF1565 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EDDDBC245478CF00EF1565 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60EDDDBD245478CF00EF1565 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		605B14202457C72500809EB2 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				605B14212457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.h */,
+				605B14222457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		605FBD0824547BAB00EF7CDA /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +88,8 @@
 				604D72A02455B27600255D2D /* HomeTableViewCell.m */,
 				604D72A22455B65700255D2D /* HomeItem.h */,
 				604D72A32455B65700255D2D /* HomeItem.m */,
+				6090224A245FC97700DBCE34 /* ImgCollectionViewCell.h */,
+				6090224B245FC97700DBCE34 /* ImgCollectionViewCell.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -96,6 +113,7 @@
 		60EDDDBB245478CF00EF1565 /* Weibo */ = {
 			isa = PBXGroup;
 			children = (
+				605B14202457C72500809EB2 /* category */,
 				605FBD0924547BB700EF7CDA /* model */,
 				605FBD0824547BAB00EF7CDA /* common */,
 				60EDDDD924547A5D00EF1565 /* controller */,
@@ -159,6 +177,7 @@
 		60EDDDB1245478CF00EF1565 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Suramire;
 				TargetAttributes = {
@@ -209,7 +228,9 @@
 				60EDDDBE245478CF00EF1565 /* AppDelegate.m in Sources */,
 				605FBD0F24547C1E00EF7CDA /* MineViewController.m in Sources */,
 				605FBD1224547D3500EF7CDA /* Oauth2ViewController.m in Sources */,
+				6090224C245FC97700DBCE34 /* ImgCollectionViewCell.m in Sources */,
 				604D729E2455AC6400255D2D /* HomeViewController.m in Sources */,
+				605B14232457C73F00809EB2 /* NSLayoutConstraint+BSIBDesignable.m in Sources */,
 				604D72A42455B65700255D2D /* HomeItem.m in Sources */,
 				60EDDDC1245478CF00EF1565 /* SceneDelegate.m in Sources */,
 			);

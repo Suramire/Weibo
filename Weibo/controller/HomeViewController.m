@@ -20,8 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //预估高度（必须要有）
+//    self.tableView.estimatedRowHeight = 100;
+    // 设置cell自适应高度
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"access_token"];
+//    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"uid"];
+//    [[NSUserDefaults standardUserDefaults]synchronize];
     NSString *access_token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
+    NSLog(@"token=%@",access_token);
     NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"uid"];
     if(access_token != nil){
         [[NetWork new] get:[NSString stringWithFormat:@"https://api.weibo.com/2/statuses/user_timeline.json?access_token=%@&uid=%@",access_token,uid] withBlock:^(BOOL isOK, NSDictionary * _Nonnull json) {
@@ -54,10 +61,15 @@
     return self.dataArray.count;
 }
 
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 350.f;
+//}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCell" forIndexPath:indexPath];
     HomeItem *homeItem = [self.dataArray objectAtIndex:indexPath.row];
+    cell.homeItem = homeItem;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[homeItem.user objectForKey:@"profile_image_url"]]]];
         dispatch_async(dispatch_get_main_queue(), ^{
