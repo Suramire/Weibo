@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //预估高度（必须要有）
-//    self.tableView.estimatedRowHeight = 100;
+    self.tableView.estimatedRowHeight = 220;
     // 设置cell自适应高度
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
 //    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"access_token"];

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionFlowLayout;
 @property HomeItem *homeItem;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightForCollectionView;
 
 @end
 

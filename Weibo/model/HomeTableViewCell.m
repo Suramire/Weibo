@@ -22,7 +22,6 @@
     self.collectionView.dataSource = self;
     self.collectionFlowLayout.estimatedItemSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width, 200);
     self.collectionFlowLayout.itemSize = UICollectionViewFlowLayoutAutomaticSize;
-    
 }
 
 
@@ -39,6 +38,14 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImgCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"wbImgCell" forIndexPath:indexPath];
+    NSLog(@"count %ld",self.homeItem.pic_num);
+        if(self.homeItem.pic_num ==0){
+            self.heightForCollectionView.constant = 0;
+        }else if(self.homeItem.pic_num <=3){
+            self.heightForCollectionView.constant = 100;
+        }else{
+            self.heightForCollectionView.constant = 200;
+        }
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[self.homeItem.imgArray objectAtIndex:indexPath.row]]]];
         dispatch_async(dispatch_get_main_queue(), ^{

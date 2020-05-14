@@ -9,6 +9,8 @@
 #import "MineViewController.h"
 #import "Oauth2ViewController.h"
 #import "NetWork.h"
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 @interface MineViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgHead;
 @property (weak, nonatomic) IBOutlet UILabel *labelName;
@@ -24,6 +26,18 @@
     [super viewDidLoad];
     
     [self setUpData];
+    
+
+}
+
+- (void)setUpPlayer{
+    NSString *mediaUrl = @"http://f.video.weibocdn.com/3qJeazjdlx07D5plRt7a010412012GVu0E010.mp4?label=mp4_ld&template=640x360.25.0&trans_finger=bdef57f06ae52835a2c783ca389e8517&Expires=1588858118&ssig=k9xCtc2Jpm&KID=unistore,video";
+    NSURL *url = [NSURL URLWithString:mediaUrl];
+    AVPlayer *player = [[AVPlayer alloc] initWithURL:url];
+    AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
+    layer.frame = CGRectMake(0, 400, 200, 100);
+    [self.view.layer addSublayer:layer];
+    [player play];
 }
 
 - (void)setUpData{
